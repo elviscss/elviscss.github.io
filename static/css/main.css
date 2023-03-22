@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-fuente: #fff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#bk-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container-link-in-bio {
+  width: 100%;
+  max-width: 1000px;
+  height: 100vh;
+}
+
+.profile-link-in-bio {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-photo {
+  width: 180px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 2em;
+  font-weight: bolder;
+  text-transform: lowercase;
+  letter-spacing: normal;
+  text-shadow: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-fuente);
+  margin: 10px 0px;
+  cursor: default;
+}
+
+.profile-description {
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: initial;
+  color: var(--color-fuente);
+  opacity: 0.9;
+  margin: 0px 0px;
+  cursor: default;
+}
+
+.social-media-links {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media-links > ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-links > ul > li {
+  list-style: none;
+}
+
+.social-media-links > ul > li > a {
+  display: block;
+  width: 300px;
+  height: 50px;
+  font-size: 1.2em;
+  font-weight: 400;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-fuente);
+  margin: 10px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #aa77ff, #62cdff);
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.social-media-links > ul > li > a > ion-icon{
+    margin: 0px 10px;
+}
+
+.social-media-links > ul > li > a:hover {
+  opacity: 1;
+  background: linear-gradient(120deg, #62cdff, #aa77ff);
+}
